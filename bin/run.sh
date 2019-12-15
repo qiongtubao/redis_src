@@ -2,6 +2,7 @@
 
 function run() {
   cd $1
+  rm -rf nohup.out
   nohup ../redis-server ./redis.conf &
   cd ../
 }
@@ -9,7 +10,7 @@ function run() {
 run "master"
 run "slave"
 
-while [$(ps aux | grep redis-server | grep -v grep | wc -l) -gt 4]
+while [ $(ps aux | grep redis-server | grep -v grep | wc -l) -gt 2 ]
 do
    sleep 1
 done

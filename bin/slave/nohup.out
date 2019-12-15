@@ -1,0 +1,45 @@
+10975:C 15 Dec 2019 23:36:44.770 # create Client
+10975:C 15 Dec 2019 23:36:44.771 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+10975:C 15 Dec 2019 23:36:44.771 # Redis version=5.0.7, bits=64, commit=c96ee824, modified=1, pid=10975, just started
+10975:C 15 Dec 2019 23:36:44.771 # Configuration loaded
+10975:S 15 Dec 2019 23:36:44.772 # create Client
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (c96ee824/1) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6479
+ |    `-._   `._    /     _.-'    |     PID: 10975
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+10975:S 15 Dec 2019 23:36:44.772 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10975:S 15 Dec 2019 23:36:44.772 # Server initialized
+10975:S 15 Dec 2019 23:36:44.772 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10975:S 15 Dec 2019 23:36:44.772 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10975:S 15 Dec 2019 23:36:44.772 * DB loaded from disk: 0.000 seconds
+10975:S 15 Dec 2019 23:36:44.772 # create Client
+10975:S 15 Dec 2019 23:36:44.772 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+10975:S 15 Dec 2019 23:36:44.772 * Ready to accept connections
+10975:S 15 Dec 2019 23:36:44.772 * Connecting to MASTER 127.0.0.1:6379
+10975:S 15 Dec 2019 23:36:44.772 * MASTER <-> REPLICA sync started
+10975:S 15 Dec 2019 23:36:44.772 * Non blocking connect for SYNC fired the event.
+10975:S 15 Dec 2019 23:36:44.772 * Master replied to PING, replication can continue...
+10975:S 15 Dec 2019 23:36:44.772 * Trying a partial resynchronization (request f39cdc4d00d83be3bd41dd7e3f8a8e1f58212b56:1).
+10975:S 15 Dec 2019 23:36:44.772 * Full resync from master: 3a60586f29795ae76180162d27042cc71ac8b504:0
+10975:S 15 Dec 2019 23:36:44.772 * Discarding previously cached master state.
+10975:S 15 Dec 2019 23:36:44.873 * MASTER <-> REPLICA sync: receiving 185 bytes from master
+10975:S 15 Dec 2019 23:36:44.873 * MASTER <-> REPLICA sync: Flushing old data
+10975:S 15 Dec 2019 23:36:44.873 * MASTER <-> REPLICA sync: Loading DB in memory
+10975:S 15 Dec 2019 23:36:44.873 # create Client
+10975:S 15 Dec 2019 23:36:44.873 * MASTER <-> REPLICA sync: Finished with success
+10975:S 15 Dec 2019 23:36:47.657 # Connection with master lost.
+10975:S 15 Dec 2019 23:36:47.657 * Caching the disconnected master state.
