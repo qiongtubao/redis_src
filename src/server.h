@@ -1321,6 +1321,15 @@ struct redisCommand {
     int lastkey;  /* The last argument that's a key */
     int keystep;  /* The step between first and last key */
     long long microseconds, calls;
+
+    /*crdt stuff*/
+    int crdt_mode;
+    long long crdt_gid;
+    VectorClock *vectorClock;
+    VectorClock *gcVectorClock;
+    list* crdtMasters;
+    int active_crdt_ovc;
+    long long crdt_conflict;
 };
 
 struct redisFunctionSym {
